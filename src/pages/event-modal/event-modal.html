@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons start>
+      <button ion-button icon-only (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Event Details</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-list>
+    <ion-item>
+        <ion-label color="primary" floating>Event Title</ion-label>
+      <ion-input type="text"   [(ngModel)]="event.title"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary" floating>Event description</ion-label>
+      <ion-input type="text"   [(ngModel)]="event.description"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+        <ion-label color="primary" floating>Event location</ion-label>
+      <ion-input type="text"   [(ngModel)]="event.location"></ion-input>
+    </ion-item> -->
+    <ion-item>
+      <ion-label>Start</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate"></ion-datetime>
+    </ion-item>
+ 
+    <ion-item [hidden]="!isToggle">
+      <ion-label>End</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime" [min]="minDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Multi day event</ion-label>
+      <ion-toggle [(ngModel)]="isToggle" (ionChange)="notify()"></ion-toggle>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary" floating>Select participants</ion-label>
+      <ion-input type="text"   [(ngModel)]="event.participants"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label>All Day?</ion-label>
+      <ion-checkbox [(ngModel)]="event.allDay"></ion-checkbox>
+    </ion-item> -->
+    <ion-navbar  > <!-- If you don't need back here -->
+      
+     <ion-label>participants</ion-label>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="action1()">
+              <ion-icon ios="md-person-add" md="md-person-add"></ion-icon>
+          </button>
+       </ion-buttons>
+  </ion-navbar>
+
+
+  <ion-navbar hideBackButton="true" color="white" > <!-- If you don't need back here -->
+   <ion-label >Location</ion-label>
+  <ion-buttons end>
+        <button ion-button icon-only (click)="action1()">
+            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+
+
+ 
+ 
+
+
+  </ion-list>
+ 
+  <button ion-button full icon-left (click)="save()">
+    <ion-icon name="checkmark"></ion-icon> Add Event
+  </button>
+</ion-content>

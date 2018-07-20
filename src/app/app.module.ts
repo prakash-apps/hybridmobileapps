@@ -8,22 +8,32 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+ import {EventDetailsPage} from'../pages/event-details/event-details';
+
+ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgCalendarModule  } from 'ionic2-calendar';
+import { ProfilePage } from '../pages/profile/profile';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    EventDetailsPage,ProfilePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    NgCalendarModule,
+     
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    EventDetailsPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

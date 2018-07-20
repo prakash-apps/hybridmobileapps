@@ -1,0 +1,130 @@
+<ion-content parallax-header>
+  <ion-fab right bottom  >
+    <button ion-fab color="danger"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  
+<div class="header-image" [ngStyle]="{'background-image' : imgSrc,height : imgHeight}">
+
+<ion-navbar transparent no-border>
+</ion-navbar>
+</div>
+  <div class="main-content">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-10>
+        <div class="movie-details">
+          <span style="color:red;font-weight:      bold;">June 10</span> 2015
+        </div>
+        <h2  >Event Name  {{value}}</h2>
+        
+        <div class="movie-details">
+          <span>Date</span> - 10,June  - 10.30 Am</div>
+      </ion-col>
+      <ion-col col-2>
+        <div class="rating">50</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <h3 text-center>Descriptions</h3>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <h3 text-center>Participants</h3>
+
+
+  <ion-scroll scrollX="true" direction="x" style="white-space: nowrap; height:150px">
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()">
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user1.png">
+        <p>Raj</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center"  >
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user2.png">
+        <p>Remo</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user1.png">
+        <p>Vicky</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user3.png">
+        <p>Rohit</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" > 
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user2.png">
+        <p>Rishi</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user1.png">
+        <p>Riya</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user3.png">
+        <p>Kavin</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user2.png">
+        <p>Rajith</p>
+      </div>
+    </ion-col>
+    <ion-col col-3 style="display: inline-block;" (click)="pushPage()" >
+      <div style="text-align: center">
+        <img style="display: block;margin: 0 auto;border-radius: 50%;" src="assets/imgs/user1.png">
+        <p>salomy</p>
+      </div>
+    </ion-col>
+  </ion-scroll>
+  <h3 text-center>Discussions</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy
+        </p>
+      </ion-col>
+      <ion-row>
+        <ion-col col-12>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+    <hr style="width: 60%;border: 1px dotted white;">
+  </ion-grid>
+  <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy
+          </p>
+        </ion-col>
+        <ion-row>
+          <ion-col col-12>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+      <hr style="width: 60%;border: 1px dotted white;">
+    </ion-grid>
+
+</div>
+</ion-content>
