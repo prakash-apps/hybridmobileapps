@@ -1,0 +1,11 @@
+{
+
+    "name": "app name",
+
+    "description": "App description",
+
+    "repository": "https://git.heroku.com/app-hnykomb.git",
+
+    "keywords": ["Keyword1", "Keyword2", "Keyword3"]
+
+}
